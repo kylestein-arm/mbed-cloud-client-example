@@ -17,8 +17,8 @@
             "mbed-trace.enable": null,
             "storage-selector.filesystem" : "FAT",
             "storage-selector.mount-point": "\"sd\"",
-            "storage-selector.storage"    : "SD_CARD",
-            "update-client.storage-address"  : "(1024*1024*64)",
+            "storage-selector.storage"    : "SPI_FLASH",
+            "update-client.storage-address"  : "(1024*1024*2)",
             "update-client.storage-size"     : "(1024*1024*2)",
             "update-client.storage-locations": "1"
         },
@@ -38,12 +38,12 @@
             "value": "WIFI_ODIN"
         },
         "wifi-ssid": {
-            "help": "WiFi SSID",
-            "value": "\"SSID\""
+            "help": "The SSID to connect to if using a WiFi interface",
+            "value": "\"ssid\""
         },
         "wifi-password": {
-            "help": "WiFi Password",
-            "value": "\"Password\""
+            "help": "An optional password for wifi security authentication",
+            "value": "\"password\""
         },
         "developer-mode": {
             "help": "Enable Developer mode to skip Factory enrollment",
